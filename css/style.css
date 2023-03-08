@@ -1,0 +1,33 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body{
+    background-color: black;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;   
+    
+   
+}
+
+input{
+    width: 30em;
+    height: 2em;
+   
+}
+
+.desc{
+    width: 30em;
+    height: 5em;
+}
