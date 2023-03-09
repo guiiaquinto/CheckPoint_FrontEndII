@@ -22,25 +22,33 @@ body{
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 15px;
     margin: 10px;   
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
 }
 
 input{
     width: 30em;
     height: 2em;
+    color:black;
    
 }
 
 label{
     align-items: left;
+    
 }
 
 .formsLabel{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     display: block;
-    width: 60px;
+    width: 403.19px;
     height: 30px;
     margin-top: 15px;
 }
@@ -51,7 +59,7 @@ label{
 }
 
 .btnEnviar{
-    width: 90%;
+    width: 15em;
     height: 50px;
     border-radius: 12px;
     background-color: red;
@@ -61,4 +69,10 @@ label{
 }
 .btnEnviar:hover{
     background-color: green;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
 }
