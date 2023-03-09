@@ -7,18 +7,23 @@
 }
 
 body{
-    background-color: black;
+   background-color: black;
 
+}
+
+.forms{
+    width: 100vw;
+    height: 1000px;
+    position: relative;
+    background-image: url("../img/imagem-principal.png");
+    background-size: 100%;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 15px;
     margin: 10px;   
-    
-   
 }
 
 input{
@@ -27,7 +32,33 @@ input{
    
 }
 
+label{
+    align-items: left;
+}
+
+.formsLabel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    display: block;
+    width: 60px;
+    height: 30px;
+    margin-top: 15px;
+}
+
 .desc{
     width: 30em;
     height: 5em;
+}
+
+.btnEnviar{
+    width: 90%;
+    height: 50px;
+    border-radius: 12px;
+    background-color: red;
+    margin-top: 50px;
+    color: #fff;
+    font-size: medium;
+}
+.btnEnviar:hover{
+    background-color: green;
 }
