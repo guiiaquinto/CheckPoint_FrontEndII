@@ -166,6 +166,31 @@ label{
     text-align: center;
 }
 
+#cards {
+    width: auto;
+    height: 22em;
+    display: flex;
+    justify-content: center;
+    
+}
+.item img{
+    max-width: 15em;
+    border-radius: 8px/8px;
+    object-fit: cover;
+
+
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20em;
+    height: 25em;
+    background: linear-gradient(to right, #de3a3a, #b10b0b);
+    border-radius: 12px/12px;
+    border: 0.5px solid lightgray
+}
+
 @media (max-width: 600px) {
     h1 {
         text-align: center;

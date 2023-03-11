@@ -25,8 +25,30 @@ function dados() {
   ];
   console.log(valores);
 
-  document.querySelector('#sumit').innerHTML = filmeValue;
-  document.querySelector('#sumit').innerHTML = descricaoValue;
+
+
+  for (let item of valores) {
+    let cards = `<div class="item">
+ <img src="${item.urlimg}">
+ <h2>${item.nomefilme}</h2>
+ <p>
+ ${item.descrição}
+ </p>
+ </div>`
+ let novoCard = document.createElement('div');
+ 
+ let grupoFelinos = document.getElementById("cards");
+ 
+ novoCard.innerHTML = cards;
+ 
+ grupoFelinos.appendChild(novoCard);
+ }
+
+
+
+
+  // document.querySelector('#sumit').innerHTML = filmeValue;
+  // document.querySelector('#sumit').innerHTML = descricaoValue;
 }
 
 
