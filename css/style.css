@@ -3,19 +3,20 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
+}
+body{
+    background-color: black;
 }
 
-body{
-   background-color: black;
-
+h1{
+    color: azure;
+    
 }
 
 .forms{
-    width: 100vw;
-    height: 1000px;
+    width: 80vw;
+    height: 500px;
     position: relative;
-    background-image: url("../img/imagem-principal.png");
     background-size: 100%;
 }
 
@@ -23,7 +24,9 @@ form {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    margin: 10px;   
+    margin: 10px;
+    color: black;
+    background-image: url("../img/imagem-principal.png");   
 }
 
 input{
@@ -43,6 +46,7 @@ label{
     width: 60px;
     height: 30px;
     margin-top: 15px;
+    color: azure;
 }
 
 .desc{
@@ -61,4 +65,8 @@ label{
 }
 .btnEnviar:hover{
     background-color: green;
+}
+
+#resultado{
+    color: white;
 }
