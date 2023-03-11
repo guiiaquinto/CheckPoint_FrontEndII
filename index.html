@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>CheckPointSala2</title>
+    <title>Ne2flix</title>
 </head>
 <body>
-    <div>
-    <h1>Ne2Flix Filmes</h1>
+    <div class="titulo">
+    <h1>NE2FLIX</h1>
     </div>
 
-    <div class="divforms">
-        <form id="forms" class="forms">
-            <label class="formsLabel" for="nomeFilme">Filme</label>
-            <input id="nomeFilme" type="text" name="nomeFilme" placeholder="Digite o nome do filme">
-            <label class="formsLabel" for="desc">Descrição</label>
-            <input id="desc" class="desc"type="text" name="descricao" placeholder="Digite a descrição do filme">
+    <div class="forms">
+        <form>
+            <label class="formsLabel" for="filme">Filme</label>
+            <input type="text" name="filme" placeholder="Digite o nome do filme" id="filme">
+            <label class="formsLabel" for="descricao">Descrição</label>
+            <input type="text" name="descricao" placeholder="Digite a descrição do filme" class="desc" id="descricao">
             <label class="formsLabel" for="url">URL</label>
-            <input id="url"type="text" name="url" placeholder="Insira aqui a URL da capa do filme">
-            <button onclick="rest()" id="btnEnviar" class="btnEnviar">Enviar</button>
+            <input type="text" name="url" placeholder="Insira aqui a URL da capa do filme" id="url">
+            <button type='button' class="btnEnviar" onclick="dados()">Enviar</button>
         </form>
     </div>
-    <div id="resultado">
+
+    <div id="sumit">
 
     </div>
+<script src="./js/script.js"></script>
+    
 </body>
 
-<script src="./js/app.js"></script>
+<footer class="rodape" id="sobre">
+    <div class="nomes-rodape">
 
-<footer>
+        <div class="primeiro-aluno">
+            <h3 class="nome-rodape">Bianca Costa</h3>
+            <a class="icones" href="https://github.com/bicst" target="_blank"><img
+                    src="./img/git.png"></a>
+        </div>
+        <div class="segundo-aluno">
+            <h3 class="nome-rodape">Fernando Santos</h3>
+            <a class="icones" href="https://github.com/fernando44santos" target="_blank"><img
+                    src="./img/git.png"></a>
+        </div>
+        <div class="terceiro-aluno">
+            <h3 class="nome-rodape">Guilherme Iaquinto</h3>
+            <a class="icones" href="https://github.com/guiiaquinto" target="_blank"><img
+                    src="./img/git.png"></a>
+        </div>
+    </div>
+    </div>
 
+    <div class="checkpoint">
+        Checkpoint I FrontEnd II - Desenvolvido em 2023
+    </div>
 </footer>

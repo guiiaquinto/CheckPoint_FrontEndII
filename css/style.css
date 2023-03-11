@@ -1,52 +1,68 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-}
-body{
-    background-color: black;
+  color: white;
 }
 
-h1{
-    color: azure;
-    
+body{
+   background-color: red;
+   font-family: 'Secular One';
+   
+
+}
+
+.titulo h1{
+    display: flex;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    justify-content: center;
+    font-size: 4em;
+   
 }
 
 .forms{
-    width: 80vw;
-    height: 500px;
+    width: 100vw;
+    height: 700px;
     position: relative;
+    background-image: url("../img/imagem-principal.png");
     background-size: 100%;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 15px;
-    margin: 10px;
-    color: black;
-    background-image: url("../img/imagem-principal.png");   
+    margin: 10px;   
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
 }
 
 input{
     width: 30em;
     height: 2em;
+    color:black;
    
 }
 
 label{
     align-items: left;
+    
 }
 
 .formsLabel{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     display: block;
-    width: 60px;
+    width: 403.19px;
     height: 30px;
     margin-top: 15px;
-    color: azure;
 }
 
 .desc{
@@ -55,7 +71,7 @@ label{
 }
 
 .btnEnviar{
-    width: 90%;
+    width: 15em;
     height: 50px;
     border-radius: 12px;
     background-color: red;
@@ -67,6 +83,91 @@ label{
     background-color: green;
 }
 
-#resultado{
-    color: white;
+.rodape {
+    width: 100vw;
+    height: 200px;
+    margin-top: 40px;
+    
+    background: #171717;
+}
+
+
+.nomes-rodape {
+  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 30px;
+    color: #FFFFFF;
+
+}
+
+.primeiro-aluno {
+   text-align: start;
+   
+   
+   
+}
+
+.segundo-aluno {
+    text-align: center;
+     
+}
+
+.terceiro-aluno {
+    text-align: end;
+     
+}
+
+.nome-rodape {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 5px;
+    color: #FFFFFF;
+}
+
+.paragrafo-rodape {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    
+
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+.icones {
+    width: 20px;
+    height: 20px;
+    margin:3px 0;
+   
+}
+
+.checkpoint {
+    
+    width: 386px;
+    height: 28px;
+    
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 28px;
+
+    color: rgba(255, 255, 255, 0.5);
+    margin:  auto;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
 }
