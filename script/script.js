@@ -1,5 +1,12 @@
+function load (){
 
-const submit = document.querySelector('.btnEnviar');
+const submit = document.querySelector('.btnEnviar')
+submit.addEventListener('click', dados)
+
+}
+
+
+
 function dados() {
 
   const filmeValue = document.getElementById('filme').value;
@@ -20,7 +27,7 @@ function dados() {
 
 
 }
-submit.addEventListener('click', dados())
+
 
 
 

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="load()">
     <div>
     <h1>Ne2Flix Filmes</h1>
     </div>
@@ -15,15 +15,19 @@
     <div class="forms">
         <form>
             <label class="formsLabel" for="filme">Filme</label>
-            <input type="text" name="Digite1" placeholder="Digite o nome do filme" id="filme">
+            <input type="text" name="Digite1" placeholder="Digite o nome do filme" minlength="4" required="required" id="filme">
             <label class="formsLabel" for="emal_1">Descrição</label>
-            <input type="text" name="Digite2" placeholder="Digite a descrição do filme" class="desc" id="descricao">
+            <input type="text" name="Digite2" placeholder="Digite a descrição do filme" class="desc" minlength="4" required="required" id="descricao">
             <label class="formsLabel" for="emal_1">URL</label>
-            <input type="text" name="Digite3" placeholder="Insira aqui a URL da capa do filme" id="url">
-            <button type='button' class="btnEnviar" onclick="dados()">Enviar</button>
+            <input type="text" name="Digite3" placeholder="Insira aqui a URL da capa do filme" minlength="4" required="required" id="url">
+        
+            <button type='button' class="btnEnviar" >Enviar</button>
         </form>
+
+
+   
     </div>
-<script src="/script/script.js"></script>
-    
 
 </body>
+
+<script src="/script/script.js"></script>
