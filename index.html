@@ -1,33 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Ne2flix</title>
 </head>
-<body onload="load()">
-    <div>
+<body onload="load()"></body>>
+    <div class="titulo">
     <h1>Ne2Flix Filmes</h1>
     </div>
 
     <div class="forms">
         <form>
             <label class="formsLabel" for="filme">Filme</label>
-            <input type="text" name="Digite1" placeholder="Digite o nome do filme" minlength="4" required="required" id="filme">
-            <label class="formsLabel" for="emal_1">Descrição</label>
-            <input type="text" name="Digite2" placeholder="Digite a descrição do filme" class="desc" minlength="4" required="required" id="descricao">
-            <label class="formsLabel" for="emal_1">URL</label>
-            <input type="text" name="Digite3" placeholder="Insira aqui a URL da capa do filme" minlength="4" required="required" id="url">
-        
+            <input type="text" name="filme" placeholder="Digite o nome do filme" minlength="4" required="required" id="filme">
+            <label class="formsLabel" for="descricao">Descrição</label>
+            <input type="text" name="descricao" placeholder="Digite a descrição do filme" minlength="4" required="required" class="desc" id="descricao">
+            <label class="formsLabel" for="url">URL</label>
+            <input type="text" name="url" placeholder="Insira aqui a URL da capa do filme" minlength="4" required="required" id="url">
             <button type='button' class="btnEnviar" >Enviar</button>
         </form>
 
 
    
     </div>
+    
+<footer class="rodape" id="sobre">
+    <div class="nomes-rodape">
+
+        <div class="primeiro-aluno">
+            <h3 class="nome-rodape">Bianca Costa</h3>
+            <a class="icones" href="https://github.com/bicst" target="_blank"><img
+                    src="./img/git.png"></a>
+        </div>
+        <div class="segundo-aluno">
+            <h3 class="nome-rodape">Fernando Santos</h3>
+            <a class="icones" href="https://github.com/fernando44santos" target="_blank"><img
+                    src="./img/git.png"></a>
+        </div>
+        <div class="terceiro-aluno">
+            <h3 class="nome-rodape">Guilherme Iaquinto</h3>
+            <a class="icones" href="https://github.com/guiiaquinto" target="_blank"><img
+                    src="./img/git.png"></a>
+        </div>
+    </div>
+
+    <div class="checkpoint">
+        Checkpoint I FrontEnd II - Desenvolvido em 2023
+    </div>
+</footer>
+<script src="/script/script.js"></script>
+    
 
 </body>
-
-<script src="/script/script.js"></script>

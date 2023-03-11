@@ -25,7 +25,8 @@ function dados() {
   ];
   console.log(valores);
 
-
+  document.querySelector('#sumit').innerHTML = filmeValue;
+  document.querySelector('#sumit').innerHTML = descricaoValue;
 }
 
 
