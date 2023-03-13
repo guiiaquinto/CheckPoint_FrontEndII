@@ -23,7 +23,6 @@ function dados() {
 
 
   ];
-  console.log(valores);
 
 
 
