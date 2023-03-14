@@ -12,7 +12,7 @@ function dados(e) {
   const filmeValue = document.getElementById('filme').value;
   const descricaoValue = document.getElementById('descricao').value;
   const urlValue = document.getElementById('url').value;
-  const erro = document.querySelector('#merro')
+  const erro = document.querySelector('#merro');
 
   const valores = [
     {
