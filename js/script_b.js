@@ -91,3 +91,8 @@ const validacao = () =>{
     }
 }
 
+/* var enviado = window.document.getElementById('btnEnviar')
+enviado.addEventListener('click', clicar)
+function clicar() {
+  enviado.innerText = 'Enviado!'
+  enviado.style.background = 'green'*/
