@@ -192,9 +192,9 @@ label{
     flex-direction: column;
     align-items: center;
     width: 20em;
-    height: 25em;
+    height: 35em;
     margin: 3% 0% 3% 0%;
-    background: linear-gradient(to right, #ae1d1d, #b10b0b);
+    background: linear-gradient(to right, #ce1616, #8f0707);
     border-radius: 12px/12px;
     border: 0.5px solid lightgray
 }
@@ -202,14 +202,20 @@ label{
     text-align: start;
 }
 .descc{
-width: 18em;
-height: auto;
+width: 15em;
+height: 14em;
 text-align: center;
+overflow-wrap: break-word;
+
+}
+.forms.ok input{
+    border-color: #09ff00;
 }
 
-.ok{
-    border-color: #09c372;
+.forms.erro input{
+    border-color: #e10000;
 }
+
 
 @media (max-width: 875px) {
 
