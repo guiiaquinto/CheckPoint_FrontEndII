@@ -75,9 +75,9 @@ const validacao = () =>{
         let cards = `<div class="item">
         <img src="${card.urlimg}">
         <h2 class='title'>${card.nomefilme}</h2>
-        <p class ='descc'>
-        ${card.descrição}
-        </p>
+        <div class ='descc'><p>${card.descrição}
+        </p> </div>
+      
         </div>`
         let novoCard = document.createElement('div');
   
