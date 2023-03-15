@@ -24,19 +24,21 @@ function dados(e) {
 
   ];
 
+  function validação (){
+
   let mensagens = [];
 
   if (filmeValue === '' || filmeValue == 'null' || filmeValue.length < 4) {
-    mensagens.push('Os campos não podem estar vazios ou com menos de 4 caracteres');
-  }
+    erro(filmeValue,'O campos não podem estar vazios ou comter menos de 4 caracteres');
+  } else{validação(filmeValue)}
 
   if (descricaoValue === '' || descricaoValue == 'null' || descricaoValue.length < 4) {
-    mensagens.push('Os campos não podem estar vazios ou com menos de 4 caracteres');
-  }
+    erro(descricaoValue, 'O campos não podem estar vazios ou comter menos de 4 caracteres');
+  }else{validação(descricaoValue)}
 
   if (urlValue === '' || urlValue == 'null' || urlValue.length < 4) {
-    mensagens.push('Os campos não podem estar vazios ou com menos de 4 caracteres');
-  }
+    erro(urlValue, 'O campos não podem estar vazios ou comter menos de 4 caracteres');
+  }else{validação(urlValue)}
 
 
   if (mensagens.length > 0) {
@@ -63,7 +65,7 @@ function dados(e) {
     }
 
   }
-
+  }
 
 
 

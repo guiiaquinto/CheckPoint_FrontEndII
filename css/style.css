@@ -24,7 +24,7 @@ body{
    
 }
 
-.forms{
+.container{
     width: 100vw;
     height: 700px;
     position: relative;
@@ -40,7 +40,7 @@ form {
     margin: 10px;   
 }
 
-.forms {
+.container {
     display: flex;
     justify-content: center;
     word-wrap: break-word;
@@ -193,13 +193,70 @@ label{
     align-items: center;
     width: 20em;
     height: 25em;
-    background: linear-gradient(to right, #de3a3a, #b10b0b);
+    margin: 3% 0% 3% 0%;
+    background: linear-gradient(to right, #ae1d1d, #b10b0b);
     border-radius: 12px/12px;
     border: 0.5px solid lightgray
 }
+.title{
+    text-align: start;
+}
+.descc{
+width: 18em;
+height: auto;
+text-align: center;
+}
 
-@media (max-width: 600px) {
-    h1 {
+.ok{
+    border-color: #09c372;
+}
+
+@media (max-width: 875px) {
+
+    .titulo{
+        font-size: 0.6em;
+    }
+    #cards {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container{
+    height: 30em;
+}
+
+} 
+
+@media (max-width: 450px){
+
+    form{
+    padding: 0;
+    margin: 0;
+    }
+    .formsize{
+        width: 15em;
+        height: 2em;
+    }
+    .formsLabel{
+        width: 13em;
+    }
+
+    .btnEnviar{
+        width: 6em
+    }
+
+    .item {
+        height:400px ;
+        width: 300px ;
+    }
+    .nomes-rodape{
+        flex-direction: column;
+        height: 30em;
+    }
+    .rodape{
+        height: 36em;
+    }
+    .aling{
         text-align: center;
     }
 }

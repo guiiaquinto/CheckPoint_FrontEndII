@@ -7,40 +7,49 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Ne2flix</title>
 </head>
-<body onload="load()"></body>
+<body>
     <div class="titulo">
     <h1>NE2FLIX</h1>
     </div>
 
-    <div class="forms">
-        <form>
-            <label class="formsLabel" for="filme">Filme</label>
-            <input type="text" name="filme" placeholder="Digite o nome do filme" minlength="4"  id="filme" required>
-            <label class="formsLabel" for="descricao">Descrição</label>
-            <input type="text" name="descricao" placeholder="Digite a descrição do filme" minlength="4"  class="desc" id="descricao" required>
-            <label class="formsLabel" for="url">URL</label>
-            <input type="text" name="url" placeholder="Insira aqui a URL da capa do filme" minlength="4"  id="url" required>
-            <button type='button' class="btnEnviar" >Enviar</button>
+    <div class="container">
+        <form id="form" action="/">
+            <div class="forms">
+                <label class="formsLabel" for="filme">Filme</label>
+                <input type="text" name="filme" placeholder="Digite o nome do filme"   id="filme" class="formsize">
+                <div class="error mensagem-erro"></div>
+            </div>
+            <div class="forms">
+                <label class="formsLabel" for="descricao">Descrição</label>
+                <input type="text" name="descricao" placeholder="Digite a descrição do filme"   class="desc formsize" id="descricao" >
+                <div class="error mensagem-erro"></div>
+            </div>
+            <div class="forms">
+                <label class="formsLabel" for="url">URL</label>
+                <input type="text" name="url" placeholder="Insira aqui a URL da capa do filme"  id="url"class="formsize">
+                <div class="error mensagem-erro"></div>
+            </div>
+            <button type='submit' class="btnEnviar" >Enviar</button>
         </form>
     </div>
     
-    <div id="merro"></div>
+    
     <section id="cards"></section>
     
 <footer class="rodape" id="sobre">
     <div class="nomes-rodape">
 
-        <div class="primeiro-aluno">
+        <div class="primeiro-aluno aling">
             <h3 class="nome-rodape">Bianca Costa</h3>
             <a class="icones" href="https://github.com/bicst" target="_blank"><img
                     src="./img/git.png"></a>
         </div>
-        <div class="segundo-aluno">
+        <div class="segundo-aluno aling">
             <h3 class="nome-rodape">Fernando Santos</h3>
             <a class="icones" href="https://github.com/fernando44santos" target="_blank"><img
                     src="./img/git.png"></a>
         </div>
-        <div class="terceiro-aluno">
+        <div class="terceiro-aluno aling">
             <h3 class="nome-rodape">Guilherme Iaquinto</h3>
             <a class="icones" href="https://github.com/guiiaquinto" target="_blank"><img
                     src="./img/git.png"></a>
@@ -50,8 +59,8 @@
     <div class="checkpoint">
         Checkpoint I FrontEnd II - Desenvolvido em 2023
     </div>
-</footer>
-<script src="./js/script.js"></script>
+ </footer>
+ <script defer src="./js/script_b.js"></script>
     
 
 </body>
