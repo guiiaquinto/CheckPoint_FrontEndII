@@ -88,7 +88,7 @@ label{
 
 .rodape {
     width: 100vw;
-    height: 40vw;
+    height: 15vw;
     margin-top: 5em;
     background: #171717;;
 }
@@ -191,7 +191,7 @@ label{
     align-items: center;
     width: 20em;
     height: 35em;
-    margin: 3% 0% 3% 0%;
+    margin: 2px 0% 2px 0%;
     background: linear-gradient(to right, #ce1616, #8f0707);
     border-radius: 12px/12px;
     border: 0.5px solid lightgray
